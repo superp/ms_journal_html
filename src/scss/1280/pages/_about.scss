@@ -1,0 +1,28 @@
+.about_page {
+  padding-top: 72px;
+}
+
+.page_navigation {
+  max-width: $grid-column;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 16px;
+
+    a {
+      color: inherit;
+      
+      &.active,
+      &:hover {
+        color: $color-hover
+      }
+    }
+  }
+}

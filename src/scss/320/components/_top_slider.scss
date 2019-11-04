@@ -1,0 +1,45 @@
+.top_slider {
+  top: 87px;
+
+  .section_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .main_content {
+    width: 100%;
+  }
+
+  .left_content {
+    order: 2;
+    width: 100%;
+  }
+}
+
+.custom_dots {
+  padding-top: 40px;
+
+  .slick-dots {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin-bottom: 0;
+    margin-right: 13px;
+    width: 51px;
+  }
+
+  button {
+    width: 35px;
+
+  }
+  
+  .slick-active {
+    
+    button {
+      width: 100%;
+    }
+  }
+}

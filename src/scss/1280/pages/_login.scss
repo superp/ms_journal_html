@@ -1,0 +1,101 @@
+.login_content {
+  max-width: $grid-column * 3 + $grid-gap-value * 2;
+}
+
+.login_form {
+  
+  > p {
+    font-family: 'Roboto';
+    line-height: 24px;
+    letter-spacing: .25px;
+    margin-bottom: 45px;
+  }
+
+  .form_item {
+    margin-bottom: 30px;
+  }
+}
+
+.form_submit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 43px;
+
+  .remember {
+    margin-right: auto;
+  }
+
+  .button {
+    margin-left: auto;
+    min-width: 80px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+  }
+}
+
+.forgot_pass {
+  border-top: 1px solid #bbbdbf;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.agreement {
+  width: 100%;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &_item {
+    margin-bottom: 25px;
+    padding-left: 28px;
+    position: relative;
+  }
+}
+
+.tabs {
+  border-bottom: 1px solid #bbbdbf;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  display: flex;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 63px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    color: inherit;
+
+    &.active {
+      color: $color-hover;
+    }
+
+    &.inactive {
+      cursor: default;
+      pointer-events: none;
+      color: #cccccc;
+    }
+  }
+
+  > a {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,96 @@
+.icon {
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:before {
+    font-family: 'ms-journal';
+    color: inherit;
+    font-size: 14px;
+  }
+
+  &:hover {
+
+    &:before {
+      color: $color-hover;
+    }
+  }
+
+  &__designer {
+    padding-right: 8px;
+
+    &:before {
+      content: 'C';
+      font-size: 20px;
+    }
+  }
+
+  &__facebook {
+
+    &:before {
+      content: 'B';
+    }
+  }
+  
+  &__instagram {
+
+    &:before {
+      content: 'A';
+    }
+  }
+
+  &__arrow_small {
+
+    &:before {
+      content: 'F';
+      font-size: 10px;
+    }
+  }
+
+  &__arrow_big {
+
+    &:before {
+      content: 'D';
+      font-size: 15px;
+    }
+  }
+
+  &__search {
+
+    &:before {
+      content: 'E';
+      font-size: 16px;
+    }
+  }
+
+  &__download {
+
+    &:before {
+      content: 'G';
+    }
+  }
+
+  &__close {
+
+    &:before {
+      content: 'H';
+      font-size: 16px;
+    }
+  }
+  
+  &__cart {
+
+    &:before {
+      content: 'I';
+      font-size: 15px;
+    }
+  }
+
+  &__done {
+
+    &:before {
+      content: 'J';
+      font-size: 14px;
+    }
+  }
+}

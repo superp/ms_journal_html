@@ -1,0 +1,46 @@
+.section_wrapper {
+  padding: 0 $grid-big-gap;
+  flex-wrap: wrap;
+}
+
+.top_bar {
+}
+
+.left_content {
+  width: 100%;
+
+  .top_bar {
+    width: 100%;
+  }
+}
+
+.main_content {
+  width: 100%;
+}
+
+.wrapper {
+  padding-top: 87px;
+}
+
+.table_block {
+  width: calc(100% + $grid-big-gap * .5);
+  margin-left: -($grid-big-gap * .5);
+  margin-right: -($grid-big-gap * .5);
+
+  table {
+
+    th,
+    td {
+      padding-left: 10px;
+  
+      &:nth-child(2) {
+        width: 46%;
+      }
+  
+      &:last-child {
+        padding-left: 15px;
+        width: 34%;
+      }
+    }
+  }
+}

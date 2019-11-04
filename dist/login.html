@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MS Journal</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" charset="utf-8">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="assets/css/application.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="section_wrapper">
+          <div class="left_content">
+            <div class="logo"><a href="javascrip:void(0)"><img src="assets/images/logo.png" alt=""></a></div>
+          </div>
+          <div class="main_content">
+            <div class="menu_holder">
+              <div class="menu_btn"><span></span><span></span><span></span></div><span>menu</span>
+            </div>
+            <div class="navigation">
+              <ul>
+                <li class="active"><a href="articles.html">Articles <span></span>& Issues</a></li>
+                <li><a href="about.html">About the <span></span>Journal</a></li>
+                <li><a href="board.html">Editorial <span></span>Board</a></li>
+                <li><a href="article_submit.html">Submit <span></span>an Article</a></li>
+                <li><a href="subscribe.html">subscribe <span></span>and access</a></li>
+                <li><a href="contact_us.html">Contact <span></span>Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="user_block">
+            <button class="sign_button">Sign in</button>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <section class="submit">
+          <div class="section_wrapper">
+            <div class="left_content"></div>
+            <div class="main_content">
+              <div class="login_content tab_content">
+                <div class="tabs">
+                  <ul>
+                    <li><a class="active" href="#tab-1">login</a></li>
+                    <li><a href="#tab-2">register</a></li>
+                  </ul><a class="inactive" href="javascript:void(0)">for reviewer</a>
+                </div>
+                <div class="login_form tab_item" id="tab-1">
+                  <p>Sign in to make a subscription online online or buy a print edition, track the status of your purchases</p>
+                  <form> 
+                    <div class="form_item">
+                      <label>Email or username</label>
+                      <input type="text" name="">
+                    </div>
+                    <div class="form_item">
+                      <label>Password</label>
+                      <input type="password" name="">
+                    </div>
+                    <div class="form_submit">
+                      <div class="remember">
+                        <input id="remember" type="checkbox">
+                        <label for="remember">Remember me</label>
+                      </div>
+                      <button class="button button_brown">Login</button>
+                    </div>
+                  </form>
+                  <div class="forgot_pass"><a class="more" href="javascript:void(0)">Forgot Password?</a></div>
+                </div>
+                <div class="login_form tab_item" id="tab-2" style="display:none;">
+                  <p>Sign in to make a subscription online online or buy a print edition, track the status of your purchases</p>
+                  <form> 
+                    <div class="form_item">
+                      <label>username</label>
+                      <input type="text" name="">
+                    </div>
+                    <div class="form_item">
+                      <label>Email</label>
+                      <input type="email" name="">
+                    </div>
+                    <div class="form_item">
+                      <div class="form_item_error">
+                        <label>Password</label>
+                        <input type="password" name=""><span class="error_text">Текст с ошибкой заполнения</span>
+                      </div><i>Use 8 or more characters with a mix of letters & numbers</i>
+                    </div>
+                    <div class="form_submit">
+                      <div class="agreement">
+                        <div class="agreement_item">
+                          <input id="agreement_1" type="checkbox">
+                          <label for="agreement_1">I have read & acknowledge the <a class="more" href="javascript:void(0)">End User License Agreement</a></label>
+                        </div>
+                        <div class="agreement_item">
+                          <input id="agreement_2" type="checkbox">
+                          <label for="agreement_2">I have read & accept the terms of the <a class="more" href="javascript:void(0)">Privacy Policy</a></label>
+                        </div>
+                      </div>
+                      <button class="button button_brown">Creat my account</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="section_wrapper">
+          <div class="left_content"></div>
+          <div class="main_content footer_wrapper">
+            <div class="footer_text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="footer_bottom">
+              <div class="copyright">
+                <p>Copiright © 2018<span>OMF Publishing, LLC</span></p>
+              </div>
+              <div class="follow"><span>Follow us on</span><a class="facebook" href="javascript:void(0)"><span class="icon icon__facebook"></span></a><a class="instagram" href="javascript:void(0)"><span class="icon icon__instagram"></span></a></div><a class="designer" href="javascript:void(0)"><span class="icon icon__designer"></span>Site design</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="vendor/js/jquery-1.11.3.min.js"></script>
+  <script src="vendor/js/slick.min.js"></script>
+  <script src="vendor/js/select2.min.js"></script>
+  <script src="vendor/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

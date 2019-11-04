@@ -1,0 +1,61 @@
+extends ../_layout
+
+block container
+  section.submit
+    .section_wrapper
+      .left_content
+            
+      .main_content
+        .login_content.tab_content
+          .tabs
+            ul
+              li
+                a.active(href="#tab-1") login
+              li
+                a(href="#tab-2") register
+            a.inactive(href="javascript:void(0)") for reviewer
+          .login_form.tab_item#tab-1
+            p Sign in to make a subscription online online or buy a print edition, track the status of your purchases
+            form 
+              .form_item
+                label Email or username
+                input(type="text", name="")
+              .form_item
+                label Password
+                input(type="password", name="")
+              .form_submit
+                .remember
+                  input#remember(type="checkbox")
+                  label(for="remember") Remember me
+                button.button.button_brown Login
+            .forgot_pass
+              a.more(href="javascript:void(0)") Forgot Password?
+
+          .login_form.tab_item#tab-2(style="display:none;")
+            p Sign in to make a subscription online online or buy a print edition, track the status of your purchases
+            form 
+              .form_item
+                label username
+                input(type="text", name="")
+              .form_item
+                label Email
+                input(type="email", name="")
+              .form_item
+                .form_item_error
+                  label Password
+                  input(type="password", name="")
+                  span.error_text Текст с ошибкой заполнения
+                i Use 8 or more characters with a mix of letters & numbers
+              .form_submit
+                .agreement
+                  .agreement_item
+                    input#agreement_1(type="checkbox")
+                    label(for="agreement_1")
+                      | I have read & acknowledge the 
+                      a.more(href="javascript:void(0)") End User License Agreement
+                  .agreement_item
+                    input#agreement_2(type="checkbox")
+                    label(for="agreement_2")
+                      | I have read & accept the terms of the 
+                      a.more(href="javascript:void(0)") Privacy Policy
+                button.button.button_brown Creat my account

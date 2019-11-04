@@ -1,0 +1,59 @@
+.top_slider {
+  background-color: #f6f6f6;
+  padding: 55px 0 40px;
+  min-height: 303px;
+  width: 100%;
+  position: fixed;
+  top: 143px;
+  z-index: 5;
+
+  + section {
+    position: relative;
+    z-index: 10;
+  }
+
+  &_item {
+    font-size: 31px;
+    line-height: 46px;
+    font-family: 'Lora';
+    letter-spacing: 1px;
+  }
+
+  .left_content {
+    align-self: flex-start;
+  }
+}
+
+.custom_dots {
+  padding-top: 1px;
+
+  .slick-dots {
+    list-style: none;
+  }
+
+  li {
+    line-height: 0;
+    padding: 5px 0;
+    margin-bottom: 4px;
+  }
+
+  button {
+    background: $color-main;
+    height: 2px;
+    border: none;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    width: $grid-column * .35;
+
+    @include transition(ease-out .25s width);
+  }
+  
+  .slick-active {
+    
+    button {
+      background: $color-hover;
+      width: $grid-column * .5;
+    }
+  }
+}

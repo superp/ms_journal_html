@@ -1,0 +1,61 @@
+extends ../_layout
+
+block container
+  section.contacts
+    .section_wrapper
+      .left_content
+        .page_navigation.sticky
+          ul
+            li
+              a(href="#publishing_office_contacts") Publishing office contacts
+            li
+              a(href="#write_to_us") write to us
+            
+
+      .main_content
+        .contacts_block#publishing_office_contacts
+          .content_title Publishing office contacts
+          .contacts_item
+            .name Fesenko I. I.
+            p Managing Editor
+            .info
+              a(href="javascript:void(0)") i.i.fesenko@dtjournal.org
+              span +38 (097) 301 55 92
+          .contacts_item
+            .name Dushyna A. I.
+            p Marketing and Advertising
+            .info
+              a(href="javascript:void(0)") a.i.dushyna@dtjournal.org
+          .contacts_item
+            .name Tymofieiev O. O.
+            p Editor in Chief
+            .info
+              a(href="javascript:void(0)") tymofeev@gmail.com
+          .adress
+            p Address: Kyiv, Ukraine, 02096, 13-A Simferopolska Str., office 121
+            a.more(href="javascript:void(0)") View on the map
+        .contacts_block#write_to_us
+          .content_title write to us
+          .contacts_form
+            form
+            .contacts_form_top
+              .form_item
+                label Choose who
+                select
+                  option(value="") Fesenko I. I.
+                  option(value="") Dushyna A. I.
+                  option(value="") Tymofieiev O. O.
+              .form_item
+                label your name
+                input(type="text")
+              .form_item
+                label your email
+                input(type="text")
+            .form_item
+              label Your message
+              textarea
+            .contacts_form_bottom
+              .no_robot
+                input#no_robot(type="checkbox")
+                label(for="no_robot") I'm not a robot
+              button.button.button_brown Send

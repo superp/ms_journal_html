@@ -1,0 +1,29 @@
+.editor {
+  
+  &_item {
+    padding-right: $grid-column;
+    flex-wrap: wrap;
+
+    .link {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      margin-right: 0;
+    }
+  }
+
+  &_grade {
+    width: 100%;
+    
+    p {
+      width: auto;
+      padding-right: 0;
+    }
+  }
+
+  
+  &_info {
+    width: 100%;
+    padding-right: 0;
+  }
+}

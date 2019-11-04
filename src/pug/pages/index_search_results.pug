@@ -1,0 +1,240 @@
+extends ../_layout
+
+block container
+  section.top_slider
+    .section_wrapper
+      .left_content
+        .custom_dots
+      .main_content
+        .top_slider_item
+          p MS is a peer-reviewed Journal dedicated to Oral & Maxillofacial, Head & Neck Surgery. Editors: Oleksii Tymofieiev & Rui Fernandes
+        .top_slider_item
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam veritatis
+        .top_slider_item
+          p MS is a peer-reviewed Journal dedicated to Oral & Maxillofacial, Head
+  
+  section.articles
+    .section_wrapper.articles_top
+      .left_content
+        .top_bar
+      
+      .main_content
+        .top_bar
+          .issues_sort
+            a.active(href="javascript:void(0)")
+              | Latest
+              em
+              | issue
+            .issues_drop
+              span 
+                | All
+                em
+                | issues
+                span.icon.icon__arrow_small
+              ul
+                li 
+                  a(href="javascript:void(0)") All issues
+                li 
+                  a(href="javascript:void(0)") All issuesssss
+                li 
+                  a(href="javascript:void(0)") All issues111
+          .search
+              span
+                | Search
+                em
+                | Articles
+              span.icon.icon__search
+          .search_block
+            .search_close
+              span.icon.icon__close
+            form
+              .search_field
+                .form_item
+                  label(for="") author name
+                  input(type="text" placeholder="Enter author name")
+                .form_item
+                  label(for="") Issue
+                  select(multiple="multiple")
+                    -for(i = 1; i < 20; i++)
+                      option(value="") #{i}
+                .form_item
+                  label(for="") Volume
+                  select
+                    -for(k = 1; k < 10; k++)
+                      option(value="") #{k}
+                .form_item
+                  label(for="") Year
+                  select
+                    option(value="") 2010
+                    option(value="") 2011
+                    option(value="") 2012
+                    option(value="") 2013
+                    option(value="") 2014
+                    option(value="") 2015
+                    option(value="") 2016
+                    option(value="") 2017
+                    option(value="") 2018
+                    option(value="") 2019
+              .search_field
+                .search_field_title
+                  span Article types
+                  a(href="javascript:void(0)") Show more
+                .search_field_row
+                  .search_item
+                    input#type_1(type="checkbox")
+                    label(for="type_1")
+                      | Review articles
+                  .search_item
+                    input#type_2(type="checkbox")
+                    label(for="type_2")
+                      | Review articles
+                  .search_item
+                    input#type_3(type="checkbox")
+                    label(for="type_3")
+                      | Review articles
+                  .search_item
+                    input#type_4(type="checkbox")
+                    label(for="type_4")
+                      | Review articles
+                .search_field_row
+                  .search_item
+                    input#type_5(type="checkbox")
+                    label(for="type_5")
+                      | Review articles
+                  .search_item
+                    input#type_6(type="checkbox")
+                    label(for="type_6")
+                      | Review articles
+                  .search_item
+                    input#type_7(type="checkbox")
+                    label(for="type_7")
+                      | Review articles
+                  .search_item
+                    input#type_8(type="checkbox")
+                    label(for="type_8")
+                      | Review articles
+
+              .search_field
+                .search_field_title
+                  span Article Tags
+                  a(href="javascript:void(0)") Show more
+                .search_field_row
+                  .search_item
+                    input#tag_1(type="checkbox")
+                    label(for="tag_1") Review articles
+                  .search_item
+                    input#tag_2(type="checkbox")
+                    label(for="tag_2") Review articles
+                  .search_item
+                    input#tag_3(type="checkbox")
+                    label(for="tag_3") Review articles
+                  .search_item
+                    input#tag_4(type="checkbox")
+                    label(for="tag_4") Review articles
+                .search_field_row
+                  .search_item
+                    input#tag_5(type="checkbox")
+                    label(for="tag_5") Review articles
+                  .search_item
+                    input#tag_6(type="checkbox")
+                    label(for="tag_6") Review articles
+                  .search_item
+                    input#tag_7(type="checkbox")
+                    label(for="tag_7") Review articles
+                  .search_item
+                    input#tag_8(type="checkbox")
+                    label(for="tag_8") Review articles
+              .search_control
+                span
+                  sup *
+                  | All of the fields are optional.
+                button.button.button_brown
+                  | Search
+                  spen.icon.icon__search
+    .section_wrapper
+      .left_content
+        .sticky
+          .search_result
+            span Search results
+            p 50 аrticles found
+            a(href="javascript:void(0)") New search
+              span.icon.icon__arrow_big
+        
+      .main_content
+
+        .article_item.with_video
+          .photo(style="background-image:url(./assets/images/issues/1.jpg)")
+            
+          .article_description
+            span Plastic and Reconstructive Surgery
+            a(href="article_view.html")  Removal of Cystic Ameloblastomas and Cysts of the Jaws: Peculiarities of the Bone Cavity Healing in Eighty-Three Galvanic Patients
+            .author Oleksii O. Tymofieiev and Natalia O. Ushko
+          .article_info
+            p Vol. 2, Issue 4
+            p Pages 10–15
+            a.access.opened(href="javascript:boid(0)")
+              span Open access
+            a.download(href="javascript:void(0)")
+              span.icon.icon__download
+              | PDF
+        
+        .article_item
+          .photo(style="background-image:url(./assets/images/issues/2.jpg)")
+            
+          .article_description
+            span Plastic and Reconstructive Surgery
+            a(href="article_view.html")  Removal of Cystic Ameloblastomas and Cysts of the Jaws: Peculiarities of the Bone Cavity Healing in Eighty-Three Galvanic Patients
+            .author Oleksii O. Tymofieiev and Natalia O. Ushko
+          .article_info
+            p Vol. 2, Issue 4
+            p Pages 10–15
+            a.access.opened(href="javascript:boid(0)")
+              span Open access
+            a.download(href="javascript:void(0)")
+              span.icon.icon__download
+              | PDF
+        
+        .article_item.with_video
+          .photo(style="background-image:url(./assets/images/issues/3.jpg)")
+            
+          .article_description
+            span Plastic and Reconstructive Surgery
+            a(href="article_view.html") Multilocular Type of Mandibular Simple Bone Cyst. Part 1: Cone Beam Computed Tomography (CBCT) Findings, Revision of the Synonyms and Treatment Strategies
+            .author Oleksandr A. Nozhenko, Valentyna I. Zaritska, Pavlo P. Snisarevskyi, and Ievgen I. Fesenko, Oleksandr A. Nozhenko, Valentyna I. Zaritska, Pavlo P. Snisarevskyi, and Ievgen I. Fesenko
+          .article_info
+            p Vol. 2, Issue 4
+            p Pages 10–15
+            a.access.closed(href="javascript:boid(0)")
+              span Buy access
+        
+        .article_item
+          .photo(style="background-image:url(./assets/images/issues/4.jpg)")
+            
+          .article_description
+            span Plastic and Reconstructive Surgery
+            a(href="article_view.html")  Removal of Cystic Ameloblastomas and Cysts of the Jaws: Peculiarities of the Bone Cavity Healing in Eighty-Three Galvanic Patients
+            .author Oleksii O. Tymofieiev and Natalia O. Ushko
+          .article_info
+            p Vol. 2, Issue 4
+            p Pages 10–15
+            a.access.opened(href="javascript:boid(0)")
+              span Open access
+            a.download(href="javascript:void(0)")
+              span.icon.icon__download
+              | PDF
+        
+        .article_item
+          .photo(style="background-image:url(./assets/images/issues/5.jpg)")
+            
+          .article_description
+            span Plastic and Reconstructive Surgery
+            a(href="article_view.html")  Removal of Cystic Ameloblastomas and Cysts of the Jaws: Peculiarities of the Bone Cavity Healing in Eighty-Three Galvanic Patients
+            .author Oleksii O. Tymofieiev and Natalia O. Ushko
+          .article_info
+            p Vol. 2, Issue 4
+            p Pages 10–15
+            a.access.opened(href="javascript:boid(0)")
+              span Open access
+            a.download(href="javascript:void(0)")
+              span.icon.icon__download
+              | PDF

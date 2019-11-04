@@ -1,0 +1,16 @@
+.editor {
+  
+  &_grade {
+    width: $grid-column * 2 + $grid-gap-value * 2;
+
+    p {
+      padding-right: $grid-gap-value;
+    }
+  }
+
+  
+  &_info {
+    width: $grid-column * 3 + $grid-gap-value * 3;
+    padding-right: $grid-gap-value;
+  }
+}

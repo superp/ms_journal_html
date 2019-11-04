@@ -1,0 +1,134 @@
+extends ../_layout
+
+block container
+  section.about_page
+    .section_wrapper
+      .left_content
+        .page_navigation.sticky
+          ul
+            li
+              a(href="javascript:void(0)") subscribe and access forms
+            li
+              a(href="javascript:void(0)") answers to questions
+
+      .main_content
+        .tab_content.subscribe
+          .tabs
+            ul
+              li
+                a.active(href="#tab-1") subscribe to journal
+              li
+                a(href="#tab-2") buy online access
+              li
+                a(href="#tab-3") Buy printed edition
+          .tab_item#tab-1
+            form
+              .form_content
+                .form_block.form_block__of_three
+                  .form_item
+                    label Term
+                    select
+                      -for(i = 0; i < 17; i++)
+                        option(value="") #{i} year (12 issues)
+                  .form_item
+                    label Price Type
+                    select
+                      -for(j = 0; j < 7; j++)
+                        option(value="") Individual
+                  .form_item
+                    label Region
+                    select
+                      -for(k = 0; k < 7; k++)
+                        option(value="") #{i} Ukraine
+                p.subscribe_info
+                  span.icon.icon__done
+                  | Full online access for the selected period
+
+              .form_content
+                .delivery_address Enter your delivery address
+                .delivery_block(style="display:none;")
+                  .form_block.form_block__of_three
+                    .form_item
+                      label Your name
+                      input(type="text")
+                    .form_item
+                      label Your last name
+                      input(type="text")
+                    .form_item
+                      label country
+                      input(type="text")
+
+                  .form_block.form_block__of_three.form_block__address
+                    .form_item
+                      label city
+                      input(type="text")
+                    .form_item
+                      label index
+                      input(type="text")
+                    .form_item
+                      label address
+                      input(type="text")
+
+                  .subscribe_panel
+              
+              .payment_panel
+                .payments
+                  .payments_item
+                    img(src="assets/images/visa.svg", alt="")
+                  .payments_item
+                    img(src="assets/images/mastercard.svg", alt="")
+                  span Payment by bank card VISA / MasterCard
+                .payment_price
+                  p $ 1000
+                  button.button.button_brown  SUBSCRIBE
+
+          .tab_item#tab-2(style="display:none;")
+            p Sign in to make a subscription online online or buy a print edition, track the status of your purchases
+            form
+              .form_submit
+                .agreement
+                  .agreement_item
+                    input#agreement_1(type="checkbox")
+                    label(for="agreement_1")
+                      | I have read & acknowledge the 
+                      a.more(href="javascript:void(0)") End User License Agreement
+              
+              .payment_panel
+                .payments
+                  .payments_item
+                    img(src="assets/images/visa.svg", alt="")
+                  .payments_item
+                    img(src="assets/images/mastercard.svg", alt="")
+                  span Payment by bank card VISA / MasterCard
+
+          .tab_item#tab-3(style="display:none;")
+            p Sign in to make a subscription online online or buy a print edition, track the status of your purchases
+            form
+              .form_submit
+                .agreement
+                  .agreement_item
+                    input#agreement_1(type="checkbox")
+                    label(for="agreement_1")
+                      | I have read & acknowledge the 
+                      a.more(href="javascript:void(0)") End User License Agreement
+                  .agreement_item
+                    input#agreement_2(type="checkbox")
+                    label(for="agreement_2")
+                      | I have read & accept the terms of the 
+                      a.more(href="javascript:void(0)") Privacy Policy
+                button.button.button_brown Creat my account
+              
+              .payment_panel
+                .payments
+                  .payments_item
+                    img(src="assets/images/visa.svg", alt="")
+                  .payments_item
+                    img(src="assets/images/mastercard.svg", alt="")
+                  span Payment by bank card VISA / MasterCard
+
+        .section_text
+          h3 Как быстро вы пришлете журнал?
+          p This quarterly Journal of Diagnostics and Treatment of Oral and Maxillofacial Pathology goals to publish the cutting-edge and peer-reviewed articles on work in oral and maxillofacial surgery and neighboring specialties. The journal includes the following topics: implants surgery, head and neck imaging, microvascular and reconstructive surgery, oral and maxillofacial pathology, head and neck surgery/oncology, TMJ lesions/disorders, head and neck trauma, plastic surgery, pharmacology/drugs.
+
+          h3 Как я могу подписаться на ваш журнал?
+          p This is an open access journal under the CC BY licence http://creativecommons.org/licenses/by-nc/4.0/. The publication fee (January-March 2018) in amount $150 per article helps to support open access policy. The price will stilling the same for the group of authors as it was at moment of article sending for a Review process.

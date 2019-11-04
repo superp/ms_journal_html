@@ -1,0 +1,35 @@
+.contacts {
+
+  &_item {
+    flex-wrap: wrap;
+    
+    .name {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  &_form {
+    padding: 40px $grid-column * .7 36px;
+
+    &_top {
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+
+      .form_item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 26px;
+      }
+    }
+
+    .no_robot {
+      margin-right: auto;
+    }
+  }
+}

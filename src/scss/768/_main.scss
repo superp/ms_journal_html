@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px) {
+  $grid-column: 11.848vw;
+  $grid-big-gap: 5vw;
+  $grid-gap-value: 3.776vw;
+
+  // Base
+  @import "layout";
+  @import "./components/header";
+  @import "./components/footer";
+  
+  @import "./components/top_slider";
+  
+  // Pages
+  @import "./pages/articles";
+  @import "./pages/about";
+  @import "./pages/editorial_board";
+  @import "./pages/contact_us";
+  @import "./pages/login";
+}

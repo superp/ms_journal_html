@@ -1,0 +1,17 @@
+.contacts {
+
+  &_item {
+    
+    .name {
+      width: $grid-column * 2 + $grid-gap-value * 2;
+    }
+
+    p {
+      width: $grid-column * 2 + $grid-gap-value * 2;
+    }
+  }
+  
+  &_form {
+    padding: 40px $grid-column * .5 36px;
+  }
+}
