@@ -1,0 +1,74 @@
+extends ../_layout
+
+block header
+  include ../base/_header_logged
+
+
+block container
+  section.about_page
+    .section_wrapper
+      .left_content
+        .page_navigation.sticky.cabinet_navigation
+          ul
+            li
+              a(href="javascript:void(0)")
+                span.icon.icon__person
+                | personal data
+            li
+              a(href="javascript:void(0)")
+                span.icon.icon__arrow_big
+                | sign out
+
+      .main_content
+        .cabinet
+          .inner_navigation
+            ul
+              li
+                a.active(href="javascript:void(0)") subscribe to journal
+              li
+                a(href="javascript:void(0)") online access
+              li
+                a(href="javascript:void(0)") printed edition
+              li
+                a(href="javascript:void(0)") my articles
+          .cabinet_title
+            | printed edition
+
+          .cabinet_content
+            .printed_item
+              .printed_item_info
+                .image
+                  img(src="assets/images/archive_img.jpg", alt="")
+                .printed_item_info_title
+                  .date June 2018
+                  p Volume 1 Issue 1
+              .printed_item_description
+                p Printed edition sent to the address: Kyiv, Ukraine, 02096 13-A Simferopolska Str., office 121
+              .printed_item_date
+                p Departure date
+                p 01/15/2019 
+
+            .printed_item
+              .printed_item_info
+                .image
+                  img(src="assets/images/archive_img.jpg", alt="")
+                .printed_item_info_title
+                  .date June 2018
+                  p Issue 1 Volume 1
+              .printed_item_description
+                p Printed edition sent to the address: Kyiv, Ukraine, 02096 13-A Simferopolska Str., office 121
+              .printed_item_date
+                p Departure date
+                p 01/15/2019 
+
+          .section_text
+            p 
+              | Пример текста – мы делаем отправку нового выпуска каждый месяц 10 числа. Если у вас поменялся адрес доставки, то измените его в
+              a(href="javascript:void(0)") настройках
+              | не позднее чем за 5 дней до следующей отправки.
+            p 
+              | Ответы на часто задаваемы вопросы можно посмотреть в разделе
+              a(href="javascript:void(0)") answers to questions
+            p 
+              | Если вы не нашли ответ на свой вопрос, напишите на почту
+              a(href="javascript:void(0)")  i.i.fesenko@dtjournal.org

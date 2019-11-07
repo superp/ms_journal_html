@@ -1,12 +1,17 @@
 header {
   height: 87px;
 }
+
+.user_navigation {
+  padding: 45px 0 0 $grid-big-gap;
+}
+
 .navigation {
   display: none;
   width: 100%;
   height: 100%;
   position: fixed;
-  padding: 87px 0 0 $grid-big-gap;
+  padding: 110px 0 0 $grid-big-gap;
   top: 0;
   left: 0;
   background-color: #fafafa;

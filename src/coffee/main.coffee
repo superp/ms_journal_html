@@ -55,6 +55,10 @@ initUI = ->
 initMenu = ->
   $('.menu_holder').on 'click', (e) ->
     $('body').toggleClass('menu_opened')
+  $('.user').on 'click', (e) ->
+    $('body').addClass('user_opened')
+  $('.user_close').on 'click', (e) ->
+    $('body').removeClass('user_opened')
 
 initFaq = ->
   accordionContent = $('.faq_item_text')
@@ -116,6 +120,12 @@ initAnchors = ->
     anchorOffset = anchorItem.offset()
 
     window.scrollTo(0, (anchorOffset.top - 215))
+
+initSettings = ->
+  $('.change_btn').on 'click', ->
+    $(this).toggleClass('active')
+    parentItem = $(this).parent()
+    parentItem.find('.settings_item_config').slideToggle()
     
 
 # $(window).scroll ->
@@ -140,3 +150,4 @@ $ ->
   initFancyBox()
   initTabs()
   initAnchors()
+  initSettings()

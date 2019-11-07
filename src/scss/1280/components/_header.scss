@@ -69,6 +69,17 @@ header {
   margin-left: auto;
 }
 
+.user_close,
+.user {
+  color: $color-hover;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+
 .sign_button {
   font-size: 12px;
   line-height: 45px;
@@ -77,9 +88,12 @@ header {
   background-color: transparent;
   font-weight: bold;
   width: 90px;
-  letter-spacing: .5px;
 }
 
 .menu_holder {
+  display: none;
+}
+
+.user_navigation {
   display: none;
 }

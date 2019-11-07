@@ -1,4 +1,5 @@
-.navigation {
+.navigation,
+.user_navigation {
   display: none;
   width: 100%;
   height: 100%;
@@ -29,6 +30,15 @@
       display: inline;
     }
   }
+}
+
+.user_navigation {
+  padding: 70px 0 0 $grid-big-gap;
+
+  .icon {
+    padding-right: 11px;
+  } 
+
 }
 
 header {
@@ -97,6 +107,37 @@ header {
   }
 }
 
+.user_close {
+  margin-bottom: 55px;
+
+  .icon {
+    padding-right: 11px;
+  }
+}
+
+.user_opened {
+
+  .user_navigation {
+    display: block;
+    z-index: 110;
+
+    li {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+
+      &.active {
+        color: $color-hover;
+      }
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
 .menu_opened {
 
   .navigation {
@@ -122,4 +163,8 @@ header {
       }
     }
   }
+}
+
+.user_controls {
+  margin-top: 50px;
 }

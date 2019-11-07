@@ -1,0 +1,82 @@
+extends ../_layout
+
+block header
+  include ../base/_header_logged
+
+
+block container
+  section.about_page
+    .section_wrapper
+      .left_content
+        .page_navigation.sticky.cabinet_navigation
+          ul
+            li
+              a(href="javascript:void(0)")
+                span.icon.icon__person
+                | personal data
+            li
+              a(href="javascript:void(0)")
+                span.icon.icon__arrow_big
+                | sign out
+
+      .main_content
+        .cabinet
+          .inner_navigation
+            ul
+              li
+                a.active(href="javascript:void(0)") subscribe to journal
+              li
+                a(href="javascript:void(0)") online access
+              li
+                a(href="javascript:void(0)") printed edition
+              li
+                a(href="javascript:void(0)") my articles
+          .cabinet_title
+            | my articles
+          
+          .cabinet_content
+            .buy_item
+              .buy_item_info
+                .buy_article
+                  .buy_article_image(style="background-image:url(./assets/images/issues/1.jpg)")
+                  .buy_article_info
+                    span Vol. 2, Issue 4, Pages 43–50
+                    p Multilocular Type of Mandibular Simple Bone Cyst. Part 1: Cone Beam Computed Tomography (CBCT) Findings, Revision of the Synonyms and Treatment Strategies
+
+              .buy_item_access
+                p Статья опубликована
+              .buy_item_button
+                button.button.button_brown
+                  | View
+            
+            .buy_item
+              .buy_item_info
+                .buy_article
+                  .buy_article_info
+                    p Multilocular Type of Mandibular Simple Bone Cyst. Part 1: Cone Beam Computed Tomography (CBCT) Findings, Revision of the Synonyms and Treatment Strategies
+              .buy_item_access
+                p Оплачено 15.01.2019. Статья передана в редакцию. Ожидайте ответ рецензента на ваш email*
+              .buy_item_button
+                button.button.button_brown
+                  | Pay
+            
+            .buy_item
+              .buy_item_info
+                .buy_article
+                  .buy_article_info
+                    p Multilocular Type of Mandibular Simple Bone Cyst. Part 1: Cone Beam Computed Tomography (CBCT) Findings, Revision of the Synonyms and Treatment Strategies
+              .buy_item_access
+                p Оплачено 15.01.2019. Статья передана в редакцию. Ожидайте ответ рецензента на ваш email*
+              .buy_item_button
+
+          .section_text
+            p 
+              | Пример текста – мы делаем отправку нового выпуска каждый месяц 10 числа. Если у вас поменялся адрес доставки, то измените его в
+              a(href="javascript:void(0)") настройках
+              | не позднее чем за 5 дней до следующей отправки.
+            p 
+              | Ответы на часто задаваемы вопросы можно посмотреть в разделе
+              a(href="javascript:void(0)") answers to questions
+            p 
+              | Если вы не нашли ответ на свой вопрос, напишите на почту
+              a(href="javascript:void(0)")  i.i.fesenko@dtjournal.org

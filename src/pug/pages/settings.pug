@@ -1,0 +1,90 @@
+extends ../_layout
+
+block header
+  include ../base/_header_logged
+
+block container
+  section.about_page
+    .section_wrapper
+      .left_content
+        .page_navigation.sticky.cabinet_navigation
+          ul
+            li
+              a.active(href="javascript:void(0)")
+                span.icon.icon__person
+                | personal data
+            li
+              a(href="javascript:void(0)")
+                span.icon.icon__arrow_big
+                | sign out
+
+      .main_content
+        .cabinet
+          .inner_navigation
+            ul
+              li
+                a.active(href="javascript:void(0)") subscribe to journal
+              li
+                a(href="javascript:void(0)") online access
+              li
+                a(href="javascript:void(0)") printed edition
+              li
+                a(href="javascript:void(0)") my articles
+        
+        .settings_content
+          form
+            .settings_item
+              .title Username
+              .filled_info Fesenko
+              .change_btn change
+              .settings_item_config(style="display:none;")
+                .form_item
+                  input(type="text")
+                .form_submit
+                  button.button.cancel cancel
+                  button.button.button_brown save
+
+
+            .settings_item
+              .title Email
+              .filled_info i.i.fesenko@dtjournal.org
+              .change_btn change
+              .settings_item_config(style="display:none;")
+                .form_item
+                  input(type="text")
+                .form_submit
+                  button.button.cancel cancel
+                  button.button.button_brown save
+
+            .settings_item
+              .title Password
+              .filled_info ***********
+              .change_btn change
+              .settings_item_config(style="display:none;")
+                .form_item
+                  input(type="text")
+                  i Use 8 or more characters with a mix of letters & numbers
+                .form_submit
+                  button.button.cancel cancel
+                  button.button.button_brown save
+
+            .settings_item
+              .title Your delivery address
+              .filled_info Information not specified
+              .change_btn change
+              .settings_item_config(style="display:none;")
+                .form_item
+                  label country
+                  input(type="text")
+                .form_item
+                  label city
+                  input(type="text")
+                .form_item
+                  label index
+                  input(type="text")
+                .form_item
+                  label address
+                  input(type="text")
+                .form_submit
+                  button.button.cancel cancel
+                  button.button.button_brown save

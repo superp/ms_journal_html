@@ -1,0 +1,26 @@
+.editions {
+
+  &_item {
+    width: calc(33.3333% - 50px);
+    margin-right: 75px;
+
+    &:nth-child(4n) {
+      margin-right: 75px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.buy_item {
+
+  &_info {
+    margin-right: 10%;
+  }
+
+  &_price {
+    width: 15%;
+  }
+}

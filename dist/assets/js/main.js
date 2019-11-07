@@ -1,5 +1,5 @@
 (function() {
-  var initAnchors, initAuthors, initCarousel, initFancyBox, initFaq, initMenu, initSearch, initTabs, initUI;
+  var initAnchors, initAuthors, initCarousel, initFancyBox, initFaq, initMenu, initSearch, initSettings, initTabs, initUI;
 
   initCarousel = function() {
     $('.top_slider .main_content').slick({
@@ -55,8 +55,14 @@
   };
 
   initMenu = function() {
-    return $('.menu_holder').on('click', function(e) {
+    $('.menu_holder').on('click', function(e) {
       return $('body').toggleClass('menu_opened');
+    });
+    $('.user').on('click', function(e) {
+      return $('body').addClass('user_opened');
+    });
+    return $('.user_close').on('click', function(e) {
+      return $('body').removeClass('user_opened');
     });
   };
 
@@ -126,6 +132,15 @@
     });
   };
 
+  initSettings = function() {
+    return $('.change_btn').on('click', function() {
+      var parentItem;
+      $(this).toggleClass('active');
+      parentItem = $(this).parent();
+      return parentItem.find('.settings_item_config').slideToggle();
+    });
+  };
+
   
   // $(window).scroll ->
   //   topHeight = $('header').outerHeight()
@@ -147,7 +162,8 @@
     initAuthors();
     initFancyBox();
     initTabs();
-    return initAnchors();
+    initAnchors();
+    return initSettings();
   });
 
 }).call(this);

@@ -93,4 +93,12 @@
       font-size: 14px;
     }
   }
+
+  &__person {
+
+    &:before {
+      content: 'K';
+      font-size: 17px;
+    }
+  }
 }

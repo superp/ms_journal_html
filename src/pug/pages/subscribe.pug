@@ -83,15 +83,57 @@ block container
                   button.button.button_brown  SUBSCRIBE
 
           .tab_item#tab-2(style="display:none;")
-            p Sign in to make a subscription online online or buy a print edition, track the status of your purchases
             form
               .form_submit
-                .agreement
-                  .agreement_item
-                    input#agreement_1(type="checkbox")
-                    label(for="agreement_1")
-                      | I have read & acknowledge the 
-                      a.more(href="javascript:void(0)") End User License Agreement
+                .buy_item
+                  .buy_item_info
+                    .buy_article
+                      a(href="javascript:void(0)").delete
+                        .span.icon.icon__close
+                      .buy_article_image(style="background-image:url(./assets/images/issues/1.jpg)")
+                      .buy_article_info
+                        span Vol. 2, Issue 4, Pages 43–50
+                        p Multilocular Type of Mandibular Simple Bone Cyst. Part 1: Cone Beam Computed Tomography (CBCT) Findings, Revision of the Synonyms and Treatment Strategies
+
+                  .buy_item_access
+                    p Open access forever
+                  .buy_item_price
+                    | $ 10
+                  .buy_item_button
+                    button.button.button_brown.disabled
+                      | Buy
+                
+                .buy_item
+                  .buy_item_info
+                    .buy_item_title
+                      | One article
+                    p 
+                      | Что бы выбрать, нажмини на “Buy access” при просомтре статьи в разделе сайта
+                      a(href="javascript:void(0)") Articles & Issues
+                  .buy_item_access
+                    p Open access forever
+                  .buy_item_price
+                    | $ 10
+                  .buy_item_button
+                    button.button.button_brown.disabled
+                      | Buy
+                
+                .buy_item
+                  .buy_item_info
+                    .buy_item_title
+                      | All articles
+                    p 
+                      | Вы получите доступ ко всем статьям и журналам сайта за выбранный период
+                      a(href="javascript:void(0)") Articles & Issues
+                  .buy_item_access
+                    select
+                      -for(i = 0; i < 5; i++)
+                        option #{i + 1} year
+                  .buy_item_price
+                    | $ 500
+                  .buy_item_button
+                    button.button.button_brown
+                      | Buy
               
               .payment_panel
                 .payments
@@ -102,22 +144,99 @@ block container
                   span Payment by bank card VISA / MasterCard
 
           .tab_item#tab-3(style="display:none;")
-            p Sign in to make a subscription online online or buy a print edition, track the status of your purchases
             form
-              .form_submit
-                .agreement
-                  .agreement_item
-                    input#agreement_1(type="checkbox")
-                    label(for="agreement_1")
-                      | I have read & acknowledge the 
-                      a.more(href="javascript:void(0)") End User License Agreement
-                  .agreement_item
-                    input#agreement_2(type="checkbox")
-                    label(for="agreement_2")
-                      | I have read & accept the terms of the 
-                      a.more(href="javascript:void(0)") Privacy Policy
-                button.button.button_brown Creat my account
+              .editions
+                select
+                  option(value="") Volume 1, Issue 1 (June 2018)
+                  option(value="") Volume 2, Issue 2 (December 2018)
+                  option(value="") Volume 1, Issue 1 (January 2017)
+                  option(value="") Volume 2, Issue 2 (April 2017)
+                  option(value="") Volume 3, Issue 3 (December 2017)
+                  option(value="") Volume 4, Issue 4 (June 2017)
+                .editions_content
+                  .editions_item
+                    a.delete(href="javascript:void(0)")
+                      span.icon.icon__close
+                    .image
+                      img(src="assets/images/journal.jpg", alt="")
+                    .editions_info
+                      span June 2018
+                      p
+                        | Volume 1
+                        br
+                        | Issue 1
+                  .editions_item
+                    a.delete(href="javascript:void(0)")
+                      span.icon.icon__close
+                    .image
+                      img(src="assets/images/journal.jpg", alt="")
+                    .editions_info
+                      span June 2018
+                      p
+                        | Volume 1
+                        br
+                        | Issue 1
+                  .editions_item
+                    a.delete(href="javascript:void(0)")
+                      span.icon.icon__close
+                    .image
+                      img(src="assets/images/journal.jpg", alt="")
+                    .editions_info
+                      span June 2018
+                      p
+                        | Volume 1
+                        br
+                        | Issue 1
+                  .editions_item
+                    a.delete(href="javascript:void(0)")
+                      span.icon.icon__close
+                    .image
+                      img(src="assets/images/journal.jpg", alt="")
+                    .editions_info
+                      span June 2018
+                      p
+                        | Volume 1
+                        br
+                        | Issue 1
+                  .editions_item
+                    a.delete(href="javascript:void(0)")
+                      span.icon.icon__close
+                    .image
+                      img(src="assets/images/journal.jpg", alt="")
+                    .editions_info
+                      span June 2018
+                      p
+                        | Volume 1
+                        br
+                        | Issue 1
               
+              .form_content
+                .delivery_address Enter your delivery address
+                .delivery_block(style="display:none;")
+                  .form_block.form_block__of_three
+                    .form_item
+                      label Your name
+                      input(type="text")
+                    .form_item
+                      label Your last name
+                      input(type="text")
+                    .form_item
+                      label country
+                      input(type="text")
+
+                  .form_block.form_block__of_three.form_block__address
+                    .form_item
+                      label city
+                      input(type="text")
+                    .form_item
+                      label index
+                      input(type="text")
+                    .form_item
+                      label address
+                      input(type="text")
+
+                  .subscribe_panel
+                
               .payment_panel
                 .payments
                   .payments_item
@@ -125,6 +244,9 @@ block container
                   .payments_item
                     img(src="assets/images/mastercard.svg", alt="")
                   span Payment by bank card VISA / MasterCard
+                .payment_price
+                  p $ 150
+                  button.button.button_brown  Buy
 
         .section_text
           h3 Как быстро вы пришлете журнал?
