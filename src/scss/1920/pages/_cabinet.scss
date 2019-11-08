@@ -113,6 +113,18 @@
     padding-top: 36px;
     padding-left: $grid-column * 2 + $grid-gap-value * 2;
   }
+  
+  .form_submit {
+
+    .button {
+      margin: 0 16px 0 0;
+
+      &.cancel {
+        background-color: #dddddd;
+        border-color: #dddddd;
+      }
+    }
+  }
 
   &:last-child {
     border: none;
@@ -152,18 +164,6 @@
       width: 100%;
     }
   }
-  
-  .form_submit {
-
-    .button {
-      margin: 0 16px 0 0;
-
-      &.cancel {
-        background-color: #dddddd;
-        border-color: #dddddd;
-      }
-    }
-  }
 
   .cabinet_content {
     display: inline-block;
@@ -171,7 +171,7 @@
     margin: 0;
 
     .button {
-      margin-right: 16px;
+      margin: 0 16px 0 0;
 
       &.cancel {
         background-color: #dddddd;

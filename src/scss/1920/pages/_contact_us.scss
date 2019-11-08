@@ -1,0 +1,110 @@
+.contacts {
+  padding-top: 72px;
+
+  .content_title {
+    text-transform: uppercase;
+    color: $color-hover;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    margin-bottom: 50px;
+
+    + .contacts_item {
+      border-top: 1px solid #bbbdbf;
+    }
+  }
+
+  &_item {
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-start;
+    padding: 35px 0;
+    border-bottom: 1px solid #bbbdbf;
+    
+    .name {
+      font-family: 'Lora';
+      font-size: 18px;
+      width: $grid-column * 2 + $grid-gap-value * 2;
+    }
+
+    p {
+      width: $grid-column * 2 + $grid-gap-value * 2;
+    }
+
+    .info {
+
+      a {
+        text-decoration: underline;
+        color: inherit;
+      }
+      
+      span {
+        display: block;
+        margin-top: 16px;
+      }
+    }
+  }
+  
+  &_form {
+    border: 1px solid #bbbdbf;
+    padding: 40px $grid-column * .5 36px;
+    margin-bottom: 90px;
+
+    .form_item {
+    }
+
+    &_top {
+      display: flex;
+      margin-bottom: 34px;
+
+      .form_item {
+        width: calc(33.333% - 12px);
+        margin-right: 18px;
+
+        .select2-container {
+          min-width: 100%;
+        }
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &_bottom {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 33px;
+    }
+
+    .button {
+      width: 77px;
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+}
+
+.adress {
+  line-height: 24px;
+  margin: 30px 0 90px;
+
+  p {
+    margin-bottom: 7px;
+  }
+}
+
+.no_robot {
+  margin-right: 60px;
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3px;
+    font-family: 'Roboto';
+    cursor: pointer;
+  }
+}

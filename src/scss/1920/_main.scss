@@ -1,5 +1,22 @@
-@media screen and (min-width: 1916px) {
+@media screen and (min-width: 1916px){
+  $grid-column: 8vw;
+  $grid-big-gap: 3.67vw;
+  $grid-gap-value: 2.5825vw;
+
   // Base
+  @import "./_layout";
+  @import "./components/header";
+  @import "./components/footer";
+  
+  @import "./components/top_slider";
 
   // Pages
+  @import "./pages/articles";
+  @import "./pages/about";
+  @import "./pages/editorial_board";
+  @import "./pages/contact_us";
+  @import "./pages/submit";
+  @import "./pages/login";
+  @import "./pages/subscribe";
+  @import "./pages/cabinet";
 }

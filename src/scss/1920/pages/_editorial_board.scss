@@ -1,0 +1,65 @@
+.editional_board {
+  padding-top: 72px;
+}
+.editor {
+
+  &_block {
+    margin-bottom: 65px;
+
+    > span {
+      text-transform: uppercase;
+      color: $color-hover;
+      font-weight: bold;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 48px;
+    }
+  }
+  
+  &_item {
+    border-top: 1px solid #bbbdbf;
+    display: flex;
+    padding: 35px 0;
+    font-family: 'Lora';
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+
+    .link {
+      margin-left: auto;
+      margin-right: 20px;
+      color: inherit;
+      align-self: flex-start;
+
+      .icon {
+        display: block;
+        @include transform(rotate(180deg));
+      }
+    }
+  }
+
+  &_grade {
+    width: $grid-column * 2 + $grid-gap-value * 2;
+    
+    p {
+      width: 49.1%;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: $grid-gap-value;
+    }
+  }
+
+  
+  &_info {
+    width: 50%;
+    padding-right: $grid-gap-value;
+    
+    .name {
+      font-size: 18px;
+    }
+
+    .theme {
+      font-family: 'Roboto';
+    }
+  }
+}
