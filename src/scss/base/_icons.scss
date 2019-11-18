@@ -101,4 +101,17 @@
       font-size: 17px;
     }
   }
+
+  &__scroll_top {
+    position: fixed;
+    z-index: 120;
+    right: $grid-big-gap;
+    bottom: 50px;
+    cursor: pointer;
+
+    &:before {
+      content: 'L';
+      font-size: 41px;
+    }
+  }
 }
