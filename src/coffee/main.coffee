@@ -52,6 +52,10 @@ initUI = ->
     $(this).addClass('active')
     $(".delivery_block").slideDown()
 
+  # SCROLL TOP
+  $(".icon__scroll_top").on 'click', ->
+    $('html, body').stop().animate( { scrollTop: 0 }, 200)
+
 initMenu = ->
   $('.menu_holder').on 'click', (e) ->
     $('body').toggleClass('menu_opened')
@@ -128,17 +132,12 @@ initSettings = ->
     parentItem.find('.settings_item_config').slideToggle()
     
 
-# $(window).scroll ->
-#   topHeight = $('header').outerHeight()
-#   topScrollHeight = $('header').scrollTop()
-#   scrollHeight = $('.scroll_block').offset()
+$(window).scroll ->
 
-#   console.log topScrollHeight
-  
-#   if (topHeight >= scrollHeight.top)
-#     $('.scroll_block').addClass('scrolling')
-#   else
-#     $('.scroll_block').removeClass('scrolling')
+  if ($(window).scrollTop() > 400)
+    $(".icon__scroll_top").show()
+  else
+    $(".icon__scroll_top").hide()
 
 $ ->
   initCarousel()
