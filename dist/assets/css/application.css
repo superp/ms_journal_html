@@ -1527,9 +1527,14 @@ header {
     .navigation a:hover {
       color: #996633; }
 
-.logo a {
-  display: inline-block;
-  vertical-align: top; }
+.logo {
+  width: 115px;
+  height: 28px; }
+  .logo a {
+    display: inline-block;
+    vertical-align: top; }
+  .logo img {
+    width: 100%; }
 
 .user_block {
   margin-left: auto; }
@@ -3171,6 +3176,9 @@ footer {
         width: 34%; }
   header {
     height: 87px; }
+  .sign_button {
+    width: auto;
+    border: none; }
   .user_navigation {
     padding: 45px 0 0 7.5vw; }
   .navigation {

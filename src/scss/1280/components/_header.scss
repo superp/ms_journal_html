@@ -58,10 +58,16 @@ header {
 }
 
 .logo {
+  width: 115px;
+  height: 28px;
 
   a {
     display: inline-block;
     vertical-align: top;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
