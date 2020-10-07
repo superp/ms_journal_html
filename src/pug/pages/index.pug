@@ -205,9 +205,6 @@ block container
             .article_slides_item(style="background-image:url(./assets/images/issues/1.jpg)")
             .article_slides_item(style="background-image:url(./assets/images/issues/2.jpg)")
             .article_slides_item(style="background-image:url(./assets/images/issues/3.jpg)")
-            //- img(src="assets/images/issues/1.jpg", alt="")
-            //- img(src="assets/images/issues/2.jpg", alt="")
-            //- img(src="assets/images/issues/3.jpg", alt="")
           //- UPDATE END article slider
             
           .article_description
@@ -224,6 +221,10 @@ block container
               | PDF
         
         .article_item.with_video
+          //- UPDATE article slider
+          .article_slides
+            .article_slides_item(style="background-image:url(./assets/images/issues/1.jpg)")
+          //- UPDATE END article slider
           .photo(style="background-image:url(./assets/images/issues/3.jpg)")
             
           .article_description
@@ -267,3 +268,42 @@ block container
             a.download(href="javascript:void(0)")
               span.icon.icon__download
               | PDF
+  .filter_mob
+    .filter_all
+      .close
+        span
+        span
+      ul
+        li
+          a(href="#") all item
+          ul
+            li
+              a(href="#") all subitem
+            li
+              a(href="#") all subitem
+            li
+              a(href="#") all subitem
+            li
+              a(href="#") all subitem
+            li
+              a(href="#") all subitem
+            li
+              a(href="#") all subitem
+        li
+          a(href="#") all item
+        li
+          a(href="#") all item
+        li
+          a(href="#") all item
+        li
+          a(href="#") all item
+
+    a.all(href="#")
+      span
+    a.active.choice(href="#")
+      span
+    a.latest(href="#")
+      span
+    a.in_press(href="#")
+      span
+  

@@ -86,6 +86,11 @@ initMenu = ->
     $('body').addClass('user_opened')
   $('.user_close').on 'click', (e) ->
     $('body').removeClass('user_opened')
+  
+  $('.filter_mob .all').on 'click', (e) ->
+    $('body').addClass('filter_opened')
+  $('.filter_mob .close').on 'click', (e) ->
+    $('body').removeClass('filter_opened')
 
 initFaq = ->
   accordionContent = $('.faq_item_text')
