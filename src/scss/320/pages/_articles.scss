@@ -7,9 +7,7 @@
 }
 
 .articles {
-
   .section_wrapper {
-
     .left_content {
       padding: 0 0 49px;
       margin-bottom: 52px;
@@ -20,7 +18,6 @@
 }
 
 .journals {
-
   &_item {
     padding-left: 120px;
 
@@ -43,7 +40,6 @@
 }
 
 .issues {
-
   &_sort {
     margin-right: auto;
 
@@ -69,12 +65,11 @@
     margin-left: 40px;
 
     span {
-
       .icon {
         padding-left: 8px;
       }
     }
-    
+
     ul {
       display: none;
 
@@ -97,7 +92,6 @@
 }
 
 .article {
-
   &_item {
     flex-wrap: wrap;
 
@@ -106,6 +100,7 @@
       height: 235px;
       margin-right: 0;
       margin-bottom: 24px;
+      display: none;
     }
   }
 
@@ -113,7 +108,7 @@
     width: 100%;
     margin-right: 0;
   }
-  
+
   &_info {
     margin-top: 11px;
     width: 100%;
@@ -122,9 +117,8 @@
     flex-wrap: wrap;
 
     p {
-
       &:nth-child(1) {
-        order: 1
+        order: 1;
       }
 
       &:nth-child(2) {
@@ -139,7 +133,7 @@
     .download {
       order: 4;
     }
-    
+
     > * {
       width: 49%;
       margin-right: 0;
@@ -150,12 +144,11 @@
 // SEARCH FORM
 
 .search_block {
-  padding-right: $grid-column * .7;
-  padding-left: $grid-column * .7;
+  padding-right: $grid-column * 0.7;
+  padding-left: $grid-column * 0.7;
 }
 
 .search_field {
-
   .form_item {
     width: 100%;
     margin: 0 0 29px;
@@ -190,16 +183,15 @@
 .search_item {
   width: 100%;
   margin-bottom: 20px;
-  
+
   &:nth-child(4) {
     display: none;
   }
 }
 // SEARCH FORM END
 
-// ARCHIVE 
+// ARCHIVE
 .articles .archive {
-
   &_wrapper {
     margin-bottom: 0;
 
@@ -226,32 +218,28 @@
 // ARTICLE VIEW
 
 .articles {
-
   .article_view {
     padding-top: 93px;
-  
+
     .left_content {
       padding-bottom: 27px;
     }
   }
 
   .recent_articles {
-    
     .left_content {
       display: none;
-    } 
+    }
   }
 }
 
 .text_title {
-
   h2 {
     font-size: 21px;
     line-height: 31px;
   }
 
   .author {
-  
     span {
       display: inline;
       margin: 0;
@@ -259,9 +247,8 @@
     }
   }
 }
- 
-.volume {
 
+.volume {
   &_slider {
     padding-left: 0;
   }
@@ -300,22 +287,19 @@
 }
 
 .authors_info {
-  padding: 40px $grid-column * .5 0;
+  padding: 40px $grid-column * 0.5 0;
 }
 
 .section_text {
   padding-right: 0;
 
   .accent {
-    padding: 30px $grid-column * .5 30px;
+    padding: 30px $grid-column * 0.5 30px;
     width: 100%;
   }
 }
 
-
 .gallery {
-  
-
   &_small {
     flex-wrap: wrap;
 
@@ -332,3 +316,56 @@
   }
 }
 // ARTICLE VIEW END
+
+// UPDATE article slider
+
+.article_slides {
+  display: block;
+  width: 100%;
+
+  .article_slides_item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 235px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .slick-dots {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0 -10px;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 7px;
+    }
+
+    button {
+      color: transparent;
+      font-size: 0;
+      line-height: 0;
+      width: 11px;
+      height: 11px;
+
+      @include transition(ease 0.25s background-color);
+      @include border-radius(50%);
+      background-color: #d7d4d4;
+    }
+
+    .slick-active {
+      button {
+        background-color: #986a46;
+      }
+    }
+  }
+}
+// UPDATE END article slider

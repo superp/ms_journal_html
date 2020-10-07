@@ -8,21 +8,18 @@
 
   .top_bar {
     flex-wrap: wrap;
-
   }
-  
-  .left_content {
 
+  .left_content {
     span {
       text-transform: none;
       font-weight: normal;
-      font-family: 'Roboto';
+      font-family: "Roboto";
     }
   }
 }
 
 .articles {
-
   .left_content {
     position: relative;
   }
@@ -32,7 +29,7 @@
   font-size: 14px;
   text-decoration: underline;
   color: $color-hover;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   text-transform: none;
 }
 
@@ -46,7 +43,7 @@
   margin-left: 1px;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 7px;
@@ -57,19 +54,17 @@
   }
 
   &.opened {
-
     &:before {
       background-color: #339933;
     }
   }
 
   &.closed {
-
     &:before {
       background-color: #993333;
     }
   }
-  
+
   span {
     text-decoration: underline;
   }
@@ -88,11 +83,9 @@
     color: $color-hover;
   }
 }
-  
+
 .journals {
-
   &_item {
-
     span {
       font-size: 12px;
       line-height: 15px;
@@ -102,7 +95,7 @@
       font-size: 24px;
       line-height: 26px;
       margin-top: 3px;
-      font-family: 'Lora';
+      font-family: "Lora";
 
       span {
         font-size: 0;
@@ -129,7 +122,6 @@
     left: 0;
 
     .slick {
-
       &-arrow {
         background: none;
         color: transparent;
@@ -140,18 +132,17 @@
         vertical-align: top;
 
         &:hover {
-
           &:before {
-            color: $color-hover;;
+            color: $color-hover;
           }
         }
-  
+
         &:before {
           width: 14px;
           height: 15px;
           line-height: 15px;
-          content: 'D';
-          font-family: 'ms-journal';
+          content: "D";
+          font-family: "ms-journal";
           font-size: 14px;
           color: $color-main;
           display: block;
@@ -170,7 +161,6 @@
 }
 
 .issues {
-
   &_sort {
     margin-right: auto;
 
@@ -180,7 +170,6 @@
     }
 
     a {
-
       &:hover,
       &.active {
         color: $color-hover;
@@ -195,12 +184,11 @@
     cursor: pointer;
 
     span {
-
       .icon {
         padding-left: 8px;
       }
     }
-    
+
     ul {
       display: none;
 
@@ -212,7 +200,6 @@
 }
 
 .search {
-
   &_result {
     max-width: $grid-column;
     position: relative;
@@ -224,11 +211,11 @@
       font-size: 12px;
       text-transform: none;
       font-weight: normal;
-      font-family: 'Roboto';
+      font-family: "Roboto";
     }
 
     p {
-      font-family: 'Lora';
+      font-family: "Lora";
       font-size: 24px;
       line-height: 28px;
       margin-bottom: 20px;
@@ -271,11 +258,10 @@
 }
 
 .article {
-
   &_item {
     display: flex;
     margin-bottom: 53px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     min-height: 125px;
 
     &:first-child {
@@ -283,12 +269,10 @@
     }
 
     &.with_video {
-
       .photo {
-
         &:before {
           position: absolute;
-          content: '';
+          content: "";
           display: block;
           width: 20px;
           height: 18px;
@@ -322,11 +306,11 @@
       color: $color-hover;
       display: block;
       margin-bottom: 10px;
-      letter-spacing: .7px;
+      letter-spacing: 0.7px;
     }
 
     a {
-      font-family: 'Lora';
+      font-family: "Lora";
       color: $color-main;
       font-size: 18px;
       line-height: 21px;
@@ -342,14 +326,14 @@
       margin-top: 10px;
     }
   }
-  
+
   &_info {
     width: $grid-column;
     font-size: 14px;
     line-height: 18px;
 
     p {
-      letter-spacing: .25px;
+      letter-spacing: 0.25px;
       margin-bottom: 8px;
     }
   }
@@ -358,8 +342,8 @@
 // SEARCH FORM
 
 .search_block {
-  padding-right: $grid-column * .5;
-  padding-left: $grid-column * .5;
+  padding-right: $grid-column * 0.5;
+  padding-left: $grid-column * 0.5;
   padding-top: 40px;
   padding-bottom: 36px;
   border: 1px solid #bbbdbf;
@@ -409,9 +393,9 @@
       margin-bottom: 0;
     }
   }
-  
+
   &_title {
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     margin-bottom: 28px;
     display: flex;
     width: 100%;
@@ -422,7 +406,7 @@
       line-height: 14px;
       font-weight: bold;
     }
-    
+
     .more {
       margin-left: auto;
     }
@@ -431,10 +415,10 @@
 
 .search_item {
   width: 25%;
-  
+
   label {
-    letter-spacing: .25px;
-    font-family: 'Roboto';
+    letter-spacing: 0.25px;
+    font-family: "Roboto";
     font-size: 14px;
     display: inline-block;
     vertical-align: middle;
@@ -467,7 +451,6 @@
     margin-left: auto;
 
     &:hover {
-
       .icon {
         color: inherit;
       }
@@ -476,11 +459,9 @@
 }
 // SEARCH FORM END
 
-
 // ARCHIVE
 
 .archive {
-
   &_wrapper {
     margin-bottom: 60px;
   }
@@ -500,7 +481,7 @@
     }
 
     p {
-      font-family: 'Lora';
+      font-family: "Lora";
       font-size: 18px;
       line-height: 22px;
       margin: 11px 0 16px;
@@ -527,10 +508,9 @@
   &_item {
     width: calc(25% - 12px);
     margin-right: 16px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
 
     .image {
-
       img {
         width: 100%;
       }
@@ -543,11 +523,10 @@
 }
 
 .year {
-  
   span {
     font-size: 24px;
     line-height: 28px;
-    font-family: 'Lora';
+    font-family: "Lora";
   }
 
   p {
@@ -565,22 +544,19 @@
   padding-top: 72px;
 
   .section_text {
-    
     p {
       margin-bottom: 0;
     }
   }
 }
- 
+
 .volume {
-
   &_item {
-
     p {
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 5px;
-      font-family: 'Roboto';
+      font-family: "Roboto";
     }
 
     .access {
@@ -599,7 +575,6 @@
     width: $grid-gap-value + $grid-column;
 
     .slick {
-
       &-arrow {
         background: none;
         color: transparent;
@@ -610,18 +585,17 @@
         vertical-align: top;
 
         &:hover {
-
           &:before {
-            color: $color-hover;;
+            color: $color-hover;
           }
         }
-  
+
         &:before {
           width: 14px;
           height: 15px;
           line-height: 15px;
-          content: 'D';
-          font-family: 'ms-journal';
+          content: "D";
+          font-family: "ms-journal";
           font-size: 14px;
           color: $color-main;
           display: block;
@@ -645,29 +619,28 @@
   > span {
     font-size: 12px;
     line-height: 14px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     color: $color-hover;
     display: block;
     margin-bottom: 12px;
   }
-  
+
   h2 {
-    font-family: 'Lora';
+    font-family: "Lora";
     font-size: 28px;
     line-height: 39px;
     margin: 0 0 15px;
   }
-  
+
   .author {
-    
     span {
       font-size: 14px;
       line-height: 16px;
-      font-family: 'Roboto';
+      font-family: "Roboto";
       display: inline-block;
       vertical-align: middle;
       margin-right: 20px;
-      font-family: 'Roboto';
+      font-family: "Roboto";
     }
   }
 }
@@ -690,7 +663,7 @@
 }
 
 .authors_info {
-  padding: 40px $grid-column * .5 0;
+  padding: 40px $grid-column * 0.5 0;
   border: 1px solid #bbbdbf;
   width: 100%;
   margin-top: 25px;
@@ -709,23 +682,23 @@
   margin-bottom: 35px;
 
   .name {
-    font-family: 'Lora';
+    font-family: "Lora";
     margin-bottom: 9px;
   }
 
   p {
     font-size: 14p;
     line-height: 24px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     margin-bottom: 5px;
   }
 }
 
 .gallery {
   margin: 40px 0 50px;
-  
+
   &_content {
-    margin-left: -($grid-column * .5 + $grid-gap-value);
+    margin-left: -($grid-column * 0.5 + $grid-gap-value);
     width: $grid-column * 4.5 + $grid-gap-value * 5;
     display: flex;
     flex-wrap: wrap;
@@ -756,13 +729,13 @@
     margin-right: -($grid-column + $grid-gap-value);
     width: $grid-column * 2 + $grid-gap-value;
     margin-left: auto;
-    padding-left: $grid-column * .5;
+    padding-left: $grid-column * 0.5;
 
     p {
       font-size: 12px;
       line-height: 18px;
       color: #666666;
-      font-family: 'Roboto';
+      font-family: "Roboto";
 
       &:first-child {
         margin-bottom: 20px;
@@ -797,7 +770,7 @@
       position: absolute;
       left: 0;
       top: 0;
-      
+
       b {
         color: $color-hover;
         font-weight: normal;
@@ -808,12 +781,11 @@
   a {
     color: inherit;
     text-decoration: underline;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
 }
 
 .article_tags {
-
   .tags_content {
     display: flex;
     flex-wrap: wrap;
@@ -828,7 +800,7 @@
       height: 35px;
       line-height: 35px;
       padding: 0 12px;
-      
+
       &:hover {
         color: $color-hover;
         border: 1px solid $color-hover;
@@ -837,3 +809,10 @@
   }
 }
 // ARTICLE VIEW END
+
+// UPDATE article slider
+
+.article_preview_slides {
+  display: none;
+}
+// UPDATE END article slider

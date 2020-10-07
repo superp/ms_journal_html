@@ -38,6 +38,29 @@ initCarousel = ->
     appendArrows: $(".volume_arrows")
   )
 
+  $('.article_slides').slick(
+    responsive: [
+      {
+        breakpoint: 9999,
+        settings: "unslick"
+      }
+      {
+        breakpoint: 640,
+        settings: {
+          dots: true
+          arrows: false
+          infinite: true
+          fade: true
+          speed: 900
+          slidesToShow: 1
+          slidesToScroll: 1
+          adaptiveHeight: true
+        }
+      }
+    ]
+  )
+
+
 initUI = ->
   $('select').select2(
     minimumResultsForSearch: -1
